@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 *{
-  font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 body {
   margin: 0;
@@ -9,61 +9,222 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  height: 100vh;
+  background-image: url("https://img.freepik.com/free-photo/pastel-blue-vignette-concrete-textured-background_53876-102637.jpg?size=626&ext=jpg&ga=GA1.2.1526871407.1661438280");
+  background-position: center;
+  background-size: cover;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.theme{
+a:link, a:visited, a:active
+{
+   color:inherit;
+    text-decoration: none;
+}
+/* a{
+  color: inherit;
+}
+a:hover{
+  text-decoration: none;
+  color:inherit;
+} */
+.nav{
   display: flex;
   justify-content: space-evenly;
-  border-bottom:3px solid greenyellow;
+  margin-top:5px;
+  width: 100%;
+  height: 50px;
+  font-size: xx-large;
+  color: black;
 }
-img{
-  width:35px;
-  height:30px;
-  cursor: pointer;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.title{
-  margin-left:300px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: x-large;
-
-}
-
-.card{
+.home:hover{
   display: flex;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 70px;
+  border:2px solid black;
+  width: 130px;
+  border-radius: 45px;
+  background-color: black;
+  color:white;
 }
-.user{
-    display: flex;
-    justify-content: center;
-    margin-top:24px;
+.education:hover{
+  display: flex;
+  justify-content: center;
+  border:2px solid black;
+  width: 155px;
+  border-radius: 45px;
+  background-color: black;
+  color:white;
 }
-input{
- width: 250px;
- padding-bottom: 10px;
- margin-bottom: 10px;
+.project:hover{
+  display: flex;
+  justify-content: center;
+  border:2px solid black;
+  width: 130px;
+  border-radius: 45px;
+  background-color: black;
+  color:white;
 }
-.main-expense{
-  margin-left:400px;
+.skill:hover{
+  display: flex;
+  justify-content: center;
+  border:2px solid black;
+  width: 130px;
+  border-radius: 45px;
+  background-color: black;
+  color:white;
+}
+.main-page:hover{
+  display: flex;
+  justify-content: center;
+  border:2px solid black;
+  width: 130px;
+  border-radius: 45px;
+  background-color: black;
+  color:white;
+}
+.myphoto{
+  border: 2px solid rgb(9, 94, 150);
+  width: 200px;
+  height: 200px;
+  border-radius: 60%;
+}
+.myphoto:hover{
+  box-shadow: 15px 15px 15px rgb(4, 92, 150);
+  cursor: pointer;
+}
+.main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top:100px;
+}
+.details{
+  text-align: center;
+  font-size:xx-large;
+  font-weight: bolder;
   margin-top: 15px;
 }
-.total-expense{
-  border:2px solid greenyellow;
-  border-radius: 6px;
+.frontend{
+  text-align: center;
+  font-size:x-large;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.sports{
+  text-align: center;
+  font-size:x-large;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.para-home{
+  text-align: center;
+  border: 2px solid black;
+  width: 1080px;
+  margin-top: 150px;
+  margin-left: 75px ;
+  font-size: x-large;
+  box-shadow: 10px 10px 10px rgb(7, 54, 97);;
+}
+span{
+  font-weight: bolder;
+}
+.myname{
+  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.myschool{
+  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.mycollege{
+  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.name:hover + .myname{
+  display:inline-flex;
+  cursor: none;
+}
+.school:hover + .myschool{
+  display: inline-block;
+}
+.college:hover + .mycollege{
+  display: inline-block;
+}
+.myeducation{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top:35px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(50px, auto);
+  margin-top:35px;
+  margin-bottom: 20px;
+ }
+ .card{
+  box-shadow: 10px 10px 10px rgb(4, 93, 183);
+ }
+ .skills-part{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(50px, auto);
+  margin-top:35px;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 10px rgb(5, 99, 207) ;
+  text-shadow: 2px 2px 5px rgb(8, 96, 160);
+  padding-top: 25px;
+ }
+ .react{
+  text-align: center;
+ }
+ .skills-img{
+  width: 170px;
+  height: 170px;
+ }
+ .html{
+  text-align: center;
+ }
+ .css{
+  text-align:center;
+ }
+ .js{
+  text-align: center;
+
+ }
+ .mongo{
+  text-align: center;
+ }
+ .logo{
   display: flex;
   justify-content: center;
-  width: 200px;
-  margin-left: 540px;
-  margin-top: 50px;
-}
+  margin-top: 15px;
+
+ }
+ .github-logo{
+  width:fit-content;
+  cursor: pointer;
+  margin-right: 5px;
+ }
+ .twitter-logo{
+  width:fit-content;
+  cursor: pointer;
+ }
+ 
