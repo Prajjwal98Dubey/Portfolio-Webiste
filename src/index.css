@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap');
+*{
+  font-family: 'Edu TAS Beginner', cursive;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.theme{
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom:3px solid greenyellow;
+}
+img{
+  width:35px;
+  height:30px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.title{
+  margin-left:300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: x-large;
+
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    margin-top:24px;
+}
+input{
+ width: 250px;
+ padding-bottom: 10px;
+ margin-bottom: 10px;
+}
+.main-expense{
+  margin-left:400px;
+  margin-top: 15px;
+}
+.total-expense{
+  border:2px solid greenyellow;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin-left: 540px;
+  margin-top: 50px;
 }
